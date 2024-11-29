@@ -9,15 +9,19 @@ class LocationViewModel extends ChangeNotifier {
       LocalLocationRepository();
   final List<LocationModel> _locations = [];
   final List<LocationModel> _historyLocations = [];
+  bool _isLoading = false;
 
   List<LocationModel> get locations => _locations;
-
   List<LocationModel> get historyLocations => _historyLocations;
+  bool get isLoading => _isLoading;
 
   Future<void> fetchLocation(String location) async {
+    _isLoading = true;
+    notifyListeners();
     final result = await _locationRepository.fetchLocation(location);
     _locations.clear();
     _locations.addAll(result);
+    _isLoading = false;
     notifyListeners();
   }
 

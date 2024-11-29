@@ -52,6 +52,11 @@ class _HomePageState extends State<HomePage> {
     _onFetchForecast(_controller.text, weatherVM);
   }
 
+  void _onFetchWeatherCurrentLocation(WeatherViewModel weatherVM) {
+    weatherVM.fetchWeather();
+    weatherVM.forecastWeather(days: _forecastDays);
+  }
+
   void _onFetchForecast(String location, WeatherViewModel weatherVM) {
     weatherVM.forecastWeather(location: location, days: _forecastDays);
   }
@@ -208,7 +213,8 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(
                         width: MediaQuery.of(context).size.width,
                         child: ElevatedButton(
-                          onPressed: () => locationVM.fetchLocation,
+                          onPressed: () =>
+                              _onFetchWeatherCurrentLocation(weatherVM),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF6C757D),
                             shape: RoundedRectangleBorder(
@@ -243,16 +249,18 @@ class _HomePageState extends State<HomePage> {
 
                 // Weather Forecast
                 Builder(builder: (context) {
-
                   final column = Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const WeatherBanner(),
+                      const WeatherBanner(), // Weather Banner
+
                       if (isMobile)
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: SizedBox(
-                            height: locationVM.historyLocations.isNotEmpty ? 200 : 0,
+                            height: locationVM.historyLocations.isNotEmpty
+                                ? 200
+                                : 0,
                             child: HistoryLocation(
                               onFetchWeather: _onFetchWeather,
                               searchController: _controller,
