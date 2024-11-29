@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "712033172431",
+    "project_id": "g-weather-forecast-fb647",
+    "storage_bucket": "g-weather-forecast-fb647.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712033172431:android:7c17e459fdde1f755ef0ba",
+        "android_client_info": {
+          "package_name": "asia.goldenowl.g_weather_forecast_anquocviet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712033172431-fgmqs9hprnh5fja38o0f1iriks7qke5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqVmirXimwRiCpj6a1XXadzvNXTvPnsCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712033172431-fgmqs9hprnh5fja38o0f1iriks7qke5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
