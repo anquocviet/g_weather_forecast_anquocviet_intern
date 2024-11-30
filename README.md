@@ -48,9 +48,8 @@
         - Đăng ký và hủy nhận thông báo qua email về thời tiết hàng ngày.
 
 ## Demo ứng dụng
-<video width="320" height="240" controls>
-  <source src="/assets/videos/demo.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/5cb4b699-8167-4079-a3d1-ad5b089aefba
+
 
 - **Trang chủ:**
   ![Home](/assets/images/home_page.png)
