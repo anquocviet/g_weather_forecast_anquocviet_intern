@@ -12,7 +12,7 @@
 - **Tên ứng dụng:** G Weather Forecast
 - **Demo:** [https://g-weather-forecast-fb647.web.app/](https://g-weather-forecast-fb647.web.app/)
 - **Mô tả:** Ứng dụng dự báo thời tiết cho người dùng.
-  Người dùng có thể xem thời tiết hiện tại và dự báo thời tiết 5 ngày tiếp theo của một thành phố
+  Người dùng có thể xem thời tiết hiện tại và dự báo thời tiết 4 ngày tiếp theo của một thành phố
   bất kỳ trên thế giới.
   Ứng dụng sử dụng API của WeatherAPI để lấy dữ liệu thời tiết.
 - **Chức năng:**
